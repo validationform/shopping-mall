@@ -1,0 +1,22 @@
+
+<div class="d1">
+    <table>
+      <tr>
+        <th>Image</th>
+        <th>Price</th>
+        <th>Quentity</th>
+        <th>Sub Total</th>
+      </tr>
+      <tr *ngFor="let food of shopData">
+        <td><img src="{{food.img}}"></td>
+        <td>₹{{food.amt}}</td>
+        <td>
+            <button class="btn1">+</button>
+        <p class="counter">{{food.qty}}</p>
+        <button class="btn2">-</button>
+        </td>
+        <td>₹{{food.amt*food.qty}}</td>
+    </tr>
+  </table>
+       
+</div>
